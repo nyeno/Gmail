@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import SideNav from '../components/SideNav'
 
-import Navbar from '../components/Navbar'
-import Search from '../components/Search'
-import Settings from '../components/Settings'
+import Navbar from '../Shared/NavItem'
+import Search from '../Shared/Search'
+import Settings from '../Shared/Settings'
 
 import styles from '../styles/Home.module.css'
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Navbar/>
         <Search/>
         <Settings/>
+        <SideNav />
       </main>
 
       <footer className={styles.footer}>
