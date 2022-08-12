@@ -14,8 +14,8 @@ const SideNav = () => {
         <Item text="Starred" icon="https://www.gstatic.com/images/icons/material/system_gm/2x/star_border_black_20dp.png"/>
         <Item text="Sent" icon="https://www.gstatic.com/images/icons/material/system_gm/2x/send_black_20dp.png"/>
         <Item text="Drafts" icon="https://www.gstatic.com/images/icons/material/system_gm/2x/insert_drive_file_black_20dp.png"/>
-        <Item text="Scheduled" icon="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/inbox/fill1/20px.svg"/>
-        <Item text="Trash" icon="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/inbox/fill1/20px.svg"/>
+        <Item text="Scheduled" icon="https://www.gstatic.com/images/icons/material/system_gm/2x/schedule_send_black_20dp.png"/>
+        <Item text="Trash" icon="https://www.gstatic.com/images/icons/material/system_gm/2x/delete_black_20dp.png"/>
       </nav>
     </div>
   )
