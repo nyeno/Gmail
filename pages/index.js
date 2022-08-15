@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" />
       </Head>
       <div className='h-screen dark:bg-black bg-gray-100'>
-
       </div>
 
     </div>
