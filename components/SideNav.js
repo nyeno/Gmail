@@ -7,7 +7,7 @@ const SideNav = () => {
   return (
     <div>
       <div>
-        <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" alt="Gmail Logo"/>
+      <Image src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" alt="Gmail Logo" width={80} height={30} />
       </div>
       <nav>
         <Item text="Inbox" icon="https://fonts.gstatic.com/s/i/short-term/release/googlesymbols/inbox/fill1/20px.svg"/>

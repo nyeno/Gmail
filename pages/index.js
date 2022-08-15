@@ -3,8 +3,8 @@ import Image from 'next/image'
 import SideNav from '../components/SideNav'
 
 import Navbar from '../Shared/NavItem'
-import Search from '../Shared/Search'
-import Settings from '../Shared/Settings'
+import Search from '../components/Search'
+import Settings from '../components/Settings'
 
 import styles from '../styles/Home.module.css'
 
@@ -18,7 +18,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Navbar/>
         <Search/>
         <Settings/>
         <SideNav />
