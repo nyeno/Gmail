@@ -51,7 +51,7 @@ export default function Home() {
           <div className="flex">
             <StarBorder/>
             <p>Starred</p>
-          </div>
+          </div>,
           <div className="flex">
             <SendOutlinedIcon/>
             <p>Sent</p>
