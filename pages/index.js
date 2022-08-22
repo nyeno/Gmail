@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import {Fragment, useState} from 'react'
 import { useTheme } from 'next-themes'
 import Image from 'next/image'
 import Main from '../components/Main'
@@ -12,7 +13,9 @@ import MailThread from '../components/MailThread';
 
 export default function Home() {
   const {theme, setTheme} = useTheme('light')
-  console.log(theme)
+  const [mails,setMails] = useState(Array(100).fill())
+  console.log(mails)
+
   return (
    
     <div>
@@ -23,10 +26,10 @@ export default function Home() {
       </Head>
       <div className='h-screen dark:bg-black bg-gray-100'>
         <Main>
-          <MailThread />
-          <MailThread />
-          <MailThread />
-          <MailThread />
+          {mails.map(mail=>(
+          <Fragment key={mail}>
+            <MailThread />
+          </Fragment>))}
         </Main>
       </div>
 
