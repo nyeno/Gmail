@@ -10,9 +10,12 @@ import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 
 const SideNav = () => {
     return ( 
-        <nav>
+        <nav className='w-14'>
             <Link href="/">
-                <a><InboxIcon/> Inbox</a>
+                <a className='hover:bg-sky-200/50 space-x-1.5'>
+                    <InboxIcon/> 
+                    <span>Inbox</span>
+                </a>
             </Link>
             <Link href="/starred">
                 <a><StarBorder/> Starred</a>

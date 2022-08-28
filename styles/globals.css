@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    box-sizing: border-box;
+}
+
 a{
     display: block;
+}
+body{
+    background-color: rgb(241 245 249);
+    padding: 0.8em 0.5em;
+    max-height: 100vh;
 }

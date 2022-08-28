@@ -3,7 +3,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import RefreshIcon from '@mui/icons-material/Refresh';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const Main= ({children}) => {
+const Controls = ({children}) => {
     return ( 
         <div>
             <form>
@@ -17,4 +17,4 @@ const Main= ({children}) => {
      );
 }
  
-export default Main;
+export default Controls;

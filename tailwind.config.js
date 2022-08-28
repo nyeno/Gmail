@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
         'body': ['"Google Sans"', 'Roboto', 'RobotoDraft', 'Helvetica', 'Arial', 'sans-serif']
     },
+    
     extend: {},
   },
   plugins: [],
