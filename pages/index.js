@@ -21,8 +21,8 @@ export default function Home() {
       </Head>
       <div className='dark:bg-black bg-white rounded-2xl mr-8 h-[calc(100vh-6rem)] overflow-hidden'>
         <Controls />
-        <Tabs />
         <div className="overflow-auto h-[88%] pb-2">
+          <Tabs />
           {mails.map(mail=>(
           <Fragment key={mail}>
             <MailThread />
