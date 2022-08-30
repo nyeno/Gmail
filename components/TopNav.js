@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import TuneIcon from '@mui/icons-material/Tune';
@@ -11,17 +9,19 @@ import AppsIcon from '@mui/icons-material/Apps';
 
 const TopNav = () => {
     return ( 
-        <nav className='flex items-center'>
-          <MenuIcon />
-          <Image src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_2x_r2.png" alt='Gmail Logo' width={90} height={30}/>
-          <form>
+        <nav className='flex items-center justify-between my-3'>
+          <div className='w-4/6 flex justify-evenly py-3 px-2 bg-blue-100 rounded-xl'>
             <SearchIcon />
-            <input type="text" />
+            <input type="text" placeholder='Search in mail' className='w-5/6'/>
             <TuneIcon />
-          </form> 
-          <HelpOutlineIcon />
-          <SettingsIcon />
-          <AppsIcon />
+          </div>
+          <div className='w-1/6 justify-evenly flex items-center mr-4'>
+            <HelpOutlineIcon className='align-middle'/>
+            <SettingsIcon />
+            <AppsIcon />
+            <Image src='https://lh3.googleusercontent.com/ogw/AOh-ky3IVm2VGZwuLXpBTPV86N6o3QgmE6tuaCwo6qNqPg=s64-c-mo' alt='User Image' width={40} height={40} className='rounded-full'/>
+          </div>
+          
         </nav>
      );
 }

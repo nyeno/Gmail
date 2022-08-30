@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     domains: ['ssl.gstatic.com', 'fonts.gstatic.com', 'www.gstatic.com', 'lh3.googleusercontent.com'],
   },
+
 }
 
 module.exports = nextConfig
