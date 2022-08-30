@@ -7,7 +7,7 @@ import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
 
 const MailThread = () => {
     return ( 
-        <div className="flex">
+        <div className="flex items-center">
             <Checkbox />
             <StarBorder />
             <p>Mail Sender</p>
