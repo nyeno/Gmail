@@ -1,25 +1,23 @@
-import Head from 'next/head'
-import { useTheme } from 'next-themes'
-import Image from 'next/image'
-
+import Head from "next/head";
+import { useTheme } from "next-themes";
+import Image from "next/image";
 
 export default function Home() {
-  const {theme, setTheme} = useTheme('light')
-  console.log(theme)
+  const { theme, setTheme } = useTheme("light");
+  console.log(theme);
   return (
-   
     <div>
       <Head>
         <title>Gmail</title>
         <meta name="description" content="Gmail Clone" />
-        <link rel="icon" href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" />
+        <link
+          rel="icon"
+          href="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico"
+        />
       </Head>
-      <div className='h-screen dark:bg-black bg-gray-100'>
-        <main>
-            All Mail
-        </main>
+      <div className="h-screen dark:bg-black bg-gray-100">
+        <main>All Mail</main>
       </div>
-
     </div>
-  )
+  );
 }
