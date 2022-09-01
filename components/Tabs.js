@@ -2,7 +2,7 @@ import { useState } from "react";
 import InboxIcon from "@mui/icons-material/Inbox";
 import SellOutlinedIcon from "@mui/icons-material/SellOutlined";
 import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+// import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("primary");
