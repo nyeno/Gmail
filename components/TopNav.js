@@ -9,7 +9,7 @@ import AppsIcon from "@mui/icons-material/Apps";
 const TopNav = () => {
   return (
     <nav className="flex items-center justify-between my-3">
-      <div className="w-4/6 flex justify-evenly py-3 px-2 bg-blue-100 rounded-xl">
+      <div className="w-3/5 flex justify-evenly py-3 px-2 bg-[#EEF3FC] rounded-xl">
         <SearchIcon />
         <input type="text" placeholder="Search in mail" className="w-5/6" />
         <TuneIcon />
