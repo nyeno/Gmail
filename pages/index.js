@@ -1,14 +1,17 @@
 import Head from "next/head";
-import { Fragment, useState } from "react";
+import { Fragment, useState,useContext } from "react";
 import { useTheme } from "next-themes";
 
 import MailThread from "../components/MailThread";
 import Controls from "../components/Control";
 import Tabs from "../components/Tabs";
+import { AppContext } from "../context/appContext";
 
 export default function Home() {
   const { theme, setTheme } = useTheme("light");
   const [mails, setMails] = useState(Array(150).fill());
+  const [state, dispatch] = useContext(AppContext);
+  console.log(state)
   return (
     <div>
       <Head>
