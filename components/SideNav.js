@@ -26,7 +26,7 @@ const SideNav = () => {
   },[pathname])
   
   return (
-    <nav className="w-1/4 mt-4">
+    <nav className="w-1/5 mt-4">
       <div className="items-center flex mx-4 justify-around w-4/6">
         <MenuIcon />
         <Image src={logo} alt="Gmail Logo" width={105} height={38} />
