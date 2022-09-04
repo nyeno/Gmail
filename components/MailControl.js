@@ -1,17 +1,17 @@
-import { Checkbox } from "@mui/material";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import RefreshIcon from "@mui/icons-material/Refresh";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArchiveOutlinedIcon from '@mui/icons-material/ArchiveOutlined';
+import AddTaskRoundedIcon from '@mui/icons-material/AddTaskRounded';
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-const Controls = ({ children }) => {
+const MailControls = ({ children }) => {
   return (
     <div className="flex justify-between">
       <div>
-        <Checkbox />
-        <ArrowDropDownIcon />
-        <RefreshIcon />
+        <ArrowBackIcon />
+        <ArchiveOutlinedIcon />
+        <AddTaskRoundedIcon />
         <MoreVertIcon />
       </div>
     
@@ -27,4 +27,4 @@ const Controls = ({ children }) => {
   );
 };
 
-export default Controls;
+export default MailControls;
