@@ -18,9 +18,7 @@ module.exports = {
     },
 
     extend: {
-      colors: {
-       
-      },
+      colors: {},
     },
   },
   plugins: [],
