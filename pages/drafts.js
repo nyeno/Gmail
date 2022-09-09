@@ -104,7 +104,7 @@ export default function Home() {
                     <p className="font-thin py-2">76 KB</p>
                     <div className="my-2 space-x-2 flex">
                       <div className="text-white bg-neutral-800/90 px-2 py-1 rounded-sm"><DownloadIcon fontSize="small"/></div>
-                      <FolderOpenIcon className="text-white bg-neutral-800/[.95] py-0.5 px-1 rounded-sm"/>
+                      <div className="text-white bg-neutral-800/90 px-2 py-1 rounded-sm"><FolderOpenIcon fontSize="small"/></div>
                     </div>
                 </div>
                 
