@@ -114,11 +114,11 @@ export default function Home() {
             
             </div>
             <div className="ml-16 space-x-4 mt-4">
-              <button className="border rounded-full px-6 py-2 border-black">
+              <button className="border rounded-full px-4 text-grey py-2 border-black">
                 <ReplyOutlinedIcon fontSize="small" className="mr-2 "/>
                 Reply
               </button>
-              <button className="border rounded-full px-6 py-2 border-black">
+              <button className="border rounded-full px-4 text-grey py-2 border-black">
                 <ShortcutIcon fontSize="small" className="mr-2 "/>
                 Forward
               </button>
