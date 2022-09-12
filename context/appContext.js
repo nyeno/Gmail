@@ -3,7 +3,7 @@ import React, { useReducer, createContext } from "react";
 export const AppContext = createContext();
 
 const initialState = {
-  composeOpen:false
+  composeOpen: false,
 };
 
 const reducer = (state, action) => {
@@ -11,7 +11,7 @@ const reducer = (state, action) => {
     case "SET_COMPOSE":
       return {
         ...state,
-        composeOpen: action.payload,
+        composeOpen: action.payload.composeOpen,
       };
     default:
       throw new Error();

@@ -79,7 +79,7 @@ export default function Home() {
             <p className="whitespace-pre ml-16 mb-12 text-sm" > 
               Hello Laura <br />
 
-              This is a <a href="https://github.com/nyeno/Planet-Fact-Site/blob/main/src/Components/PhoneNav.js" className="inline text-blue-600 underline" target="_blank">sample</a> subject with some attachments.😃
+              This is a <a href="https://github.com/nyeno/Planet-Fact-Site/blob/main/src/Components/PhoneNav.js" className="inline text-blue-600 underline" target="_blank" rel="noreferrer">sample</a> subject with some attachments.😃
             </p>
             <div className="ml-16 relative ">
               <div className="overflow-hidden ">
