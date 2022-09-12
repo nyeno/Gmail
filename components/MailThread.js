@@ -14,7 +14,9 @@ const MailThread = () => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       className={`hover:drop-shadow-l flex items-center justify-between pr-5 cursor-pointer ${
-        isHover ? "border-b-4 border-grey-900" : "border-b-2 border-grey-100"
+        isHover
+          ? "border-b-4 border-grey-900"
+          : "border-b-[1px] border-grey-100"
       }`}
     >
       <div className="flex items-center justify-between w-5/6">

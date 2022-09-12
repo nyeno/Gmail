@@ -11,27 +11,38 @@ import ScheduleSendOutlinedIcon from "@mui/icons-material/ScheduleSendOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";
+import { AppContext } from "../context/appContext";
 
 const SideNav = () => {
   const [activeTab, setActiveTab] = useState("/");
   const { pathname } = useRouter();
+  const [state, dispatch] = useContext(AppContext);
   const changeTab = (type) => {
     setActiveTab(type);
   };
   useEffect(() => {
-    console.log(pathname);
     changeTab(pathname);
   }, [pathname]);
-
+  const openModal = () => {
+    dispatch({
+      type: "SET_COMPOSE",
+      payload: {
+        composeOpen: true,
+      },
+    });
+  };
   return (
     <nav className="w-1/5 mt-4">
       <div className="items-center flex mx-4 justify-around w-4/6">
         <MenuIcon />
         <Image src={logo} alt="Gmail Logo" width={105} height={38} />
       </div>
-      <button className="bg-[#C2E7FF] py-4 px-6 rounded-2xl ml-3 my-4 font-medium space-x-2">
+      <button
+        onClick={openModal}
+        className="bg-[#C2E7FF] py-4 px-6 rounded-2xl ml-3 my-4 font-medium space-x-2 hover:drop-shadow-lg flex items-center"
+      >
         <CreateOutlinedIcon fontSize="small" />
         <span className="ml-2">Compose</span>
       </button>
