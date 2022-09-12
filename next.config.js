@@ -8,6 +8,7 @@ const nextConfig = {
       "fonts.gstatic.com",
       "www.gstatic.com",
       "lh3.googleusercontent.com",
+      "www.google.com"
     ],
   },
 };
