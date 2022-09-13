@@ -34,7 +34,7 @@ export default function Home() {
               </form>
               
           </section>
-        </main>
+      </main>
       </div>
     </div>
   );
