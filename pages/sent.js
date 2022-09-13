@@ -15,7 +15,7 @@ export default function Home() {
         />
       </Head>
       <div className="h-screen dark:bg-black bg-gray-100">
-      <main className="align-middle p-8 border border-[#DADCE0] rounded h-4/6 w-2/6 m-auto">
+      <main className="align-middle px-10 py-12 border border-[#DADCE0] rounded h-5/12 w-5/12 m-auto">
           <section>
               <div className="flex justify-center"><Image src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png" width={75} height={28} /></div>
               <p className="text-2xl text-center">Sign in
@@ -24,7 +24,7 @@ export default function Home() {
               <form className="my-6">
                   <input type="text" className="border border-[#DADCE0] rounded px-2 py-2 w-full" placeholder="Email or phone"/>
                   <p className="text-blue-600 text-sm font-medium mt-2">Forgot email?</p>
-                  <p className="text-sm my-8">Not your computer? Use Guest mode to sign in privately
+                  <p className="text-sm my-8">Not your computer? Use Guest mode to sign in privately.
                     <span className="text-blue-600 text-sm font-medium block">Learn more</span>
                   </p>
                   <div className=" col-span-2 flex justify-between items-center">
