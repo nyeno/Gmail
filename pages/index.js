@@ -7,12 +7,16 @@ import Controls from "../components/Control";
 import Tabs from "../components/Tabs";
 import { AppContext } from "../context/appContext";
 import ComposeModal from "../components/ComposeModal";
+import PageLayout from "../components/PageLayout";
+
 
 export default function Home() {
   const { theme, setTheme } = useTheme("light");
   const [mails, setMails] = useState(Array(150).fill());
   const [state, dispatch] = useContext(AppContext);
+  
   return (
+    <PageLayout>
     <div>
       <Head>
         <title>Gmail</title>
@@ -32,8 +36,8 @@ export default function Home() {
             </Fragment>
           ))}
         </div>
-        <ComposeModal />
       </div>
     </div>
+    </PageLayout>
   );
 }

@@ -3,10 +3,12 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import PageLayout from "../components/PageLayout";
 
 export default function Home() {
   const { theme, setTheme } = useTheme("light");
   return (
+    <PageLayout>
     <div>
       <Head>
         <title>Gmail</title>
@@ -52,5 +54,6 @@ export default function Home() {
       </main>
       </div>
     </div>
+    </PageLayout>
   );
 }

@@ -262,7 +262,7 @@ function ComposeModal() {
             className={`text-sm ${
               isExpand ? "w-[90%] h-[700px]" : "w-[570px] h-[400px]"
             } outline-none overflow-auto`}
-          ></div>
+          >{mailContent}</div>
         </div>
         <div className="absolute bottom-0 left-0 w-[100%] flex justify-between items-center px-3 py-3">
           <div className="flex items-center">
