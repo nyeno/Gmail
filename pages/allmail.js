@@ -1,11 +1,15 @@
 import Head from "next/head";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Layout from "../components/Layout";
+import PageLayout from "../components/PageLayout";
 
 export default function Home() {
   const { theme, setTheme } = useTheme("light");
   return (
-    <div>
+    <Layout>
+      <PageLayout>
+      <div>
       <Head>
         <title>Gmail</title>
         <meta name="description" content="Gmail Clone" />
@@ -46,6 +50,10 @@ export default function Home() {
           </section>
         </main>
       </div>
-    </div>
+        </div>
+      </PageLayout>
+       
+    </Layout>
+    
   );
 }

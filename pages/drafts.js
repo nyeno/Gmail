@@ -16,6 +16,8 @@ import ShortcutIcon from '@mui/icons-material/Shortcut';
 import DownloadIcon from '@mui/icons-material/Download';
 import FolderOpenIcon from '@mui/icons-material/FolderOpen';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import Layout from "../components/Layout";
+import PageLayout from "../components/PageLayout";
 
 export default function Home() {
   
@@ -23,7 +25,9 @@ export default function Home() {
 
 
   return (
-    <div>
+    <Layout>
+      <PageLayout>
+      <div>
       <Head>
         <title>sample subject</title>
         <meta name="description" content="Gmail Clone" />
@@ -125,6 +129,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      </PageLayout>
+      
+    </Layout>
+   
   );
 }

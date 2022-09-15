@@ -7,9 +7,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
       <AppContextProvider>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
+        <Component {...pageProps} />
       </AppContextProvider>
     </ThemeProvider>
   );

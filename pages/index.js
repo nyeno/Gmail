@@ -8,7 +8,7 @@ import Tabs from "../components/Tabs";
 import { AppContext } from "../context/appContext";
 import ComposeModal from "../components/ComposeModal";
 import PageLayout from "../components/PageLayout";
-
+import Layout from "../components/Layout";
 
 export default function Home() {
   const { theme, setTheme } = useTheme("light");
@@ -16,7 +16,8 @@ export default function Home() {
   const [state, dispatch] = useContext(AppContext);
   
   return (
-    <PageLayout>
+    <Layout>
+        <PageLayout>
     <div>
       <Head>
         <title>Gmail</title>
@@ -39,5 +40,7 @@ export default function Home() {
       </div>
     </div>
     </PageLayout>
+    </Layout>
+    
   );
 }
