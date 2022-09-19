@@ -6,15 +6,14 @@ import MailThread from "../components/MailThread";
 import Controls from "../components/Control";
 import Tabs from "../components/Tabs";
 import { AppContext } from "../context/appContext";
-import ComposeModal from "../components/ComposeModal";
 import PageLayout from "../components/PageLayout";
 import Layout from "../components/Layout";
 
 export default function Home() {
   const { theme, setTheme } = useTheme("light");
-  const [mails, setMails] = useState(Array(150).fill());
   const [state, dispatch] = useContext(AppContext);
-  
+  const [mails, setMails] = useState(Array(150).fill());
+ 
   return (
     <Layout>
         <PageLayout>
